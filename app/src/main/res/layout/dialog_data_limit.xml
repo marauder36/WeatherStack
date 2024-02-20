@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.appcompat.widget.LinearLayoutCompat
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/transparent"
+>
+<androidx.cardview.widget.CardView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+    app:cardCornerRadius="20dp">
+<LinearLayout
+
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="26dp">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Current Data Usage Limit: "
+            android:fontFamily="@font/poppins_medium"
+            android:textColor="@color/secondaru"
+            android:layout_marginBottom="16dp"
+            android:layout_marginEnd="5dp"/>
+
+        <TextView
+            android:id="@+id/tvCurrentLimit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Unlimited"
+            android:fontFamily="@font/poppins_semibold"
+            android:textColor="@color/Dark"
+            android:layout_marginBottom="18dp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Current Usage: "
+            android:fontFamily="@font/poppins_medium"
+            android:textColor="@color/secondaru"
+            android:layout_marginBottom="16dp"
+            android:layout_marginEnd="5dp"/>
+
+        <TextView
+            android:id="@+id/tvCurrentUsage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="18dp"
+            android:fontFamily="@font/poppins_semibold"
+            android:textColor="@color/Dark"
+            android:text="0 MB" />
+
+    </LinearLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:id="@+id/etDataLimit"
+            android:layout_width="175dp"
+            android:layout_height="wrap_content"
+            android:hint="Enter data limit (MB)"
+            android:textColorHint="@color/secondaru"
+            android:inputType="number"/>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/setNewLimitButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:text="Set Limit"
+            android:textColor="@color/Dark"
+            android:fontFamily="@font/poppins_semibold"
+            android:background="@drawable/rounded_button_background"
+            android:padding="10dp"
+            />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</LinearLayout>
+
+</androidx.cardview.widget.CardView>
+</androidx.appcompat.widget.LinearLayoutCompat>

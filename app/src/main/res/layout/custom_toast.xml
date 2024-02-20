@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- custom_toast.xml -->
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="20dp">
+<LinearLayout
+
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@color/white">
+
+<!--    <ImageView-->
+<!--        android:id="@+id/imageView"-->
+<!--        android:layout_width="48dp"-->
+<!--        android:layout_height="48dp"-->
+<!--        android:src="@drawable/your_image" />-->
+
+    <TextView
+        android:id="@+id/textViewCustomToast"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Couldn't find the place you were looking for, please try again !"
+        android:textSize="12sp"
+        android:fontFamily="@font/poppins_semibold"
+        android:textColor="@color/Dark"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginStart="10dp"/>
+</LinearLayout>
+</androidx.cardview.widget.CardView>
